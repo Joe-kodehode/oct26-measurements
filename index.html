@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Measurements</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1>CSS Measurements</h1>
+        <p>
+          This page shows common CSS units, size constraints, and responsive
+          values. Resize the browser to compare.
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <h2>Measurements</h2>
+
+      <h3>Pixels (px)</h3>
+      <p>
+        A pixel is an absolute unit in CSS. Its size does not depend on the
+        parent element or viewport.
+      </p>
+
+      <div class="example">
+        <div class="box px-box">width: 200px</div>
+      </div>
+
+      <h3>Percent (%)</h3>
+      <p>A percentage is usually based on the size of the parent element.</p>
+
+      <div class="example">
+        <div class="box percent-box">width: 50%</div>
+      </div>
+
+      <h3>em</h3>
+      <p>
+        em is relative to font-size. when used on fonts, it is based on the
+        parent's font-size. when used on padding and margin, it is based on it's
+        own font-size.
+      </p>
+
+      <div class="example row">
+        <div class="box small-text">
+          <p>16px text</p>
+          <p>1em</p>
+        </div>
+
+        <div class="box big-text">
+          <p>32px text</p>
+          <p>2em</p>
+        </div>
+      </div>
+
+      <h3>rem</h3>
+      <p>
+        rem is based on the root (html) font-size. It is commonly used for
+        consistent font sizes and spacing.
+      </p>
+
+      <p>
+        The browsers default font-size is 16px. This can be changed for people
+        who have trouble seeing, perhaps they make it larger.
+      </p>
+
+      <div class="example">
+        <div class="box rem-box">font-size: 3rem</div>
+      </div>
+
+      <h3>characters (ch)</h3>
+      <p>
+        ch is spproximately the width of the "0" character. It is useful for
+        controlling the readable line of text.
+      </p>
+
+      <div class="example">
+        <div class="box characters">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          amet sit numquam cupiditate corporis reiciendis fugiat, neque eligendi
+          hic at!
+        </div>
+      </div>
+
+      <h3>vw (viewport-width)</h3>
+      <p>
+        vw is based on the browser width. 1vw is 1% of the viewport's width.
+        Unline %, it is not based on the parent element.
+      </p>
+
+      <div class="example">
+        <div class="box vw-box">width: 50vw</div>
+      </div>
+
+      <h3>vh (viewport-height)</h3>
+      <p>
+        vh is based on the brower height. 1vh is 1% of the viewport's height.
+      </p>
+
+      <div class="example">
+        <div class="box vh-box">height: 30vh</div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<!-- Break until 10:35 -->
