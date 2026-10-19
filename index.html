@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <section class="hero">Hero Section</section>
+
     <header class="header">
       <div class="container">
         <h1>CSS Measurements</h1>
@@ -103,8 +105,75 @@
       <div class="example">
         <div class="box vh-box">height: 30vh</div>
       </div>
+
+      <h3>Responsive Images</h3>
+      <p>Images can have a fixed size or grow/shrink to fit their container.</p>
+
+      <div class="example">
+        <img
+          src="images/sleepy-cat.jpg"
+          alt="a cat having a nice nap"
+          class="static-image"
+        />
+      </div>
+
+      <div class="example">
+        <img
+          src="images/stair-cat.jpg"
+          alt="a cat sitting on the stairs"
+          class="responsive-image"
+        />
+      </div>
+
+      <h3>object-fit</h3>
+      <p>object-fit controls how an image fills its container.</p>
+
+      <div class="example row">
+        <div class="card">
+          <img
+            src="images/pc.jpg"
+            alt="a new desktop pc"
+            class="fit-image cover-image"
+          />
+          <p>object-fit: cover</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="images/mouse.jpg"
+            alt="a small mouse on a desktop"
+            class="fit-image contain-image"
+          />
+          <p>object-fit: contain</p>
+        </div>
+      </div>
+
+      <h2>Size Constraints</h2>
+
+      <h3>max-width</h3>
+      <p>max-width stops an element from becoming too large.</p>
+
+      <div class="example">
+        <div class="box max-box">max-width: 400px</div>
+      </div>
+
+      <h3>min-width</h3>
+      <p>
+        min-width stops an element from becoming too small. If the minimum is
+        larger than the parent, the element will overflow.
+      </p>
+
+      <div class="example">
+        <div class="box min-box">min-width: 250px</div>
+      </div>
+
+      <h3>min-height / max-height</h3>
+      <p>These control the minimum and maximum height of an element.</p>
+
+      <div class="example row">
+        <div class="box min-h">min-height</div>
+        <div class="box max-h">max-height</div>
+      </div>
     </main>
   </body>
 </html>
-
-<!-- Break until 10:35 -->

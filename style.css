@@ -107,3 +107,56 @@ p {
 .vh-box {
   height: 30vh;
 }
+
+/* Hero Section */
+.hero {
+  background-color: #2563eb;
+  color: white;
+  font-size: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+/* Images */
+.static-image {
+  width: 300px;
+}
+
+.responsive-image {
+  width: 100%;
+  max-width: 300px;
+}
+
+.fit-image {
+  width: 100%;
+  height: 220px;
+  border: 2px solid red;
+}
+
+.cover-image {
+  object-fit: cover;
+}
+
+.contain-image {
+  object-fit: contain;
+}
+
+.max-box {
+  max-width: 400px;
+}
+
+.min-box {
+  min-width: 250px;
+}
+
+.min-h {
+  height: 50px;
+  min-height: 100px;
+}
+
+.max-h {
+  height: 200px;
+  max-height: 100px;
+}
